@@ -1,0 +1,44 @@
+body{
+  margin:0;
+  }
+a{
+  color:rgb(235, 96, 96);
+  text-decoration: none;
+}
+
+h1{
+  color: green;
+  font-size: 45px; text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding: 20px;
+}
+
+#grid ol{
+    border-right: 1px solid rgb(31, 33, 168);
+    margin:0;
+    padding:20px;
+    padding-left: 30px;
+    width:90px;
+  }
+
+#article{
+  padding-left: 80px;
+  }
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  }
+
+@media (max-width:400px) {
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+    padding-left: 100px;
+  }
+  h1{
+    border-bottom: none;
+  }
+} 

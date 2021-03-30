@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>방산공략집 - html</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.CSS">
+  <style>
+    h4 {
+      margin: 0;
+      padding: 20px;
+      padding-left: 30px;
+      width: 83px;
+      border-top: 5px groove rgb(31, 33, 168);
+      border-left: 5px groove rgb(31, 33, 168);
+      border-right: 5px groove rgb(31, 33, 168);
+      border-bottom: 5px groove rgb(31, 33, 168);
+    }
+  </style>
+</head>
+
+<body>
+  <input type="button" value="무야호" onclick="
+    var target = document.querySelector('body')
+    if (this.value === '무야호') {
+      alert('그만큼 신나시는 거지~!')
+      target.style.backgroundColor = 'pink';
+      target.style.color = 'blue';
+      this.value = '그만큼 신나시는 거지';
+    } else {
+      alert('무야호~!')
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = '무야호';
+    }">
+
+
+  <h1><a href="index.html">방산대백과</a></h1>
+  <h4><a href="주의사항.html">주의사항</a></h4>
+  <div id="grid">
+    <ol>
+      <li><a href="프론트.html">프론트</a></li>
+      <li><a href="홀.html">홀</a></li>
+      <li><a href="주방.html">주방</a></li>
+      <li><a href="방산 팁.html">방산 팁</a></li>
+    </ol>
+
+    <div id="article">
+      <h2>WELCOME</h2>
+      <p><input type="button" value="전역을 위해 CHEERS" onclick="alert('응~안와')"></p>
+      <br><strong>분대원 전역일 계산기</strong>
+      <ul>
+        <li><a href="분대원/신종성.html">신종성</a></li>
+        <li><a href="분대원/김태훈.html">김태훈</a></li>
+        <li><a href="분대원/강찬희.html">강찬희</a></li>
+        <li><a href="분대원/이승헌.html">이승헌</a></li>
+      </ul>
+
+      <P><img src="山.jpg" width="25%"></P>
+    </div>
+    <span style="color: greenyellow;">
+    <script>
+      document.write("Made<br>");
+
+      document.write("by<br>");
+
+      document.write("신종성<br>");
+    </script></span>
+
+    <input type="button" value="업데이트 중" onclick="
+    if (this.value ==='업데이트 중') {
+      document.querySelector('body').style.backgroundColor = 'skyblue';
+      this.value = 'SUMMER IS COMING';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'black';
+      this.value = '업데이트 중';
+    }">
+
+</body>
+
+</html>
