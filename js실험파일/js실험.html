@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text] {
+            /* input 태그 중 type="text"인 것만 선택*/
+
+            width: 145px;
+            padding: 5px;
+
+            background-color: #e7e7e7;
+            border: 1px solid silver;
+        }
+
+        input[type=button] {
+            width: 50px;
+            padding: 5px;
+
+            background-color: green;
+            color: white;
+            border: 1px solid silver;
+        }
+    </style>
+    <script>
+        // Array의 prototype을 지정해주고, shuffle이라는 이름을 가진 함수를 생성
+        Array.prototype.shuffle = function () {
+            return this.concat().sort(
+                function () { return Math.random() - Math.random(); }
+            );
+        }
+
+        // dataMath.rondom => 0이상 1 미만의 값을 랜덤으로 리턴 Math.floor => 소수점 이하를 버림, 즉 해당 숫자보다 크지 않은 정수들 중 가장 큰 수라고 생각하면 된다.
+
+        var data = new Array();
+        data[0] = 'data0';
+        data[1] = 'data1';
+        data[2] = 'data2';
+        data[3] = 'data3';
+        data[4] = 'data4';
+        data[5] = 'data5';
+        data[6] = 'data6';
+        data[7] = 'data7';
+        data[8] = 'data8';
+        data[9] = 'data9';
+
+        var arr = data.shuffle();
+        alert(arr[0] + ' ' + arr[1] + ' ' + arr[2]);
+    </script>
+
+</head>
+
+</body>
+
+<body>
+    //<form name="lotto">
+        <input type="button" value="뽑기" onClick="shuffle()" />
+        <br /><!-- 줄바꿈 -->
+        행운의 번호는 다음과 같습니다: <input type="text" name="result" readonly />
+    </form>
+
+    <script language="JavaScript">
+        
+        function random_text()
+        {};
+        var random_text = new random_text();
+        // Set the number of text strings to zero to start
+        var number = 0;
+        // Incremental list of all possible Text
+        random_text[number++] = "Random Text1"
+        random_text[number++] = "Random Text2"
+        random_text[number++] = "Random Text3"
+        random_text[number++] = "Random Text4"
+        random_text[number++] = "Random Text5"
+        // Create a random number with limits based on the number
+        // of possible random text strings
+        var random_number = Math.floor(Math.random() * number);
+        // Write out the random text to the browser
+        document.write(random_text[random_number]);
+    </script>
+        
+        <br><br>
+        Click <a href="javascript:history.go(0);">refresh</a> to see more random text.
+        </body>
+        
+    
+
+</html>
