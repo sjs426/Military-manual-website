@@ -1,0 +1,34 @@
+.menu a{
+    cursor:pointer;
+    color: black;
+    font-size: 20px;
+}
+
+li.menu {
+    list-style-type: none;
+}
+.menu .hide{display:none;}
+
+
+
+.flag a{
+    cursor:pointer;
+    color: black;
+    font-size: 20px;
+}
+li.flag {
+    list-style-type: none;
+}
+.flag .hide{display:none;}
+
+
+
+.boiler a{
+    cursor:pointer;
+    color: black;
+    font-size: 20px;
+}
+li.boiler {
+    list-style-type: none;
+}
+.boiler .hide{display:none;}

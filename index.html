@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>방산공략집 - html</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.CSS">
+  <link rel="stylesheet" href="buttonST.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="todo.css?ver=1">
+
+  <style>
+    h4 {
+      margin: 0;
+      padding: 20px;
+      padding-left: 30px;
+      width: 83px;
+      border-top: 5px groove rgb(31, 33, 168);
+      border-left: 5px groove rgb(31, 33, 168);
+      border-right: 5px groove rgb(31, 33, 168);
+      border-bottom: 5px groove rgb(31, 33, 168);
+    }
+
+    .배경 {
+      background-image: url(image/시계.jpg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.5;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="배경"></div>
+  <input type="button" value="무야호" onclick="
+    var target = document.querySelector('body')
+    if (this.value === '무야호') {
+      alert('그만큼 신나시는 거지~!')
+      target.style.backgroundColor = 'pink';
+      target.style.color = 'blue';
+      this.value = '그만큼 신나시는 거지';
+    } else {
+      alert('무야호~!')
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = '무야호';
+    }">
+
+  <h1><a href="index.html">방산대백과</a></h1>
+  <h4><a href="주의사항.html">주의사항</a></h4>
+
+  <div id="grid">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="myMenu.js">
+    </script>
+    <div id="menu-container">
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"><span></span><span></span><span></span></div>
+        <!-- hamburger-menu -->
+      </div>
+      <!-- menu-wrapper -->
+      <ul class="menu-list accordion">
+        <li id="nav1" class="toggle accordion-toggle">
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">프론트</a>
+        </li>
+        <ul class="menu-submenu accordion-content">
+          <li><a class="head" href="프론트/프론트 - 고정업무.html">고정업무</a></li>
+          <li><a class="head" href="프론트/프론트 - 정비일.html">정비일 해야할 것</a></li>
+          <li><a class="head" href="프론트/프론트 - 목욕탕.html">목욕탕 관리</a></li>
+        </ul>
+        <li id="nav2" class="toggle accordion-toggle">
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">홀</a>
+        </li>
+        <ul class="menu-submenu accordion-content">
+          <li><a class="head" href="홀/홀 - 고정업무.html">고정업무</a></li>
+          <li><a class="head" href="홀/홀 - 정비일.html">정비일 해야할 것</a></li>
+          <li><a class="head" href="홀/홀 - 객실관리.html">객실관리</a></li>
+        </ul>
+        <li id="nav3" class="toggle accordion-toggle">
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">주방</a>
+        </li>
+        <ul class="menu-submenu accordion-content">
+          <li><a class="head" href="주방/주방 - 고정업무.html">고정업무</a></li>
+          <li><a class="head" href="주방/주방 - 정비일.html">정비일 해야할 것</a></li>
+          <li><a class="head" href="주방/주방 - 재료손질.html">재료손질</a></li>
+          <li><a class="head" href="주방/주방 - 메뉴.html">메뉴</a></li>
+        </ul>
+        <li id="nav4" class="toggle accordion-toggle">
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">개인시간TIP</a>
+        </li>
+        <ul class="menu-submenu accordion-content">
+          <li><a class="head" href="개인시간TIP/운동.html">운동</a></li>
+          <li><a class="head" href="개인시간TIP/독서&공부.html">독서&공부</a></li>
+        </ul>
+      </ul>
+      <!-- menu-list accordion-->
+    </div>
+
+    <div id="article">
+      <div style="text-align: center; color: brown; font-size: 100px; ">WELCOME</div>
+      <p><input type="button" value="전역을 위해 CHEERS" onclick="alert('응~안와')"></p>
+    </div>
+
+    <div>
+      <strong>분대원 전역일 계산기</strong>
+        <body onload='getLastSelectedValue()'>
+        <script type="text/javascript" src="/option/option.js"></script>
+        <select id="selectX" onchange="getSelectValue('selectX')">
+          <option>이병</option>
+          <option>일병</option>
+          <option>상병</option>
+          <option>병장</option>
+        </select>
+        <a style="color: paleturquoise;" href="분대원/신종성.html" target="_blank">신종성</a><br>
+        
+        <select id="selectX" onchange="getSelectValue('selectX')">
+          <option>상병</option>
+          <option>병장</option>
+        </select>
+        <a style="color: paleturquoise;"  href="분대원/김태훈.html" target="_blank">김태훈</a><br>
+          
+        <select id="selectX2" onchange="getSelectValue('selectX')">
+          <option>일병</option>
+          <option>상병</option>
+          <option>병장</option>
+        </select>
+        <a style="color: paleturquoise;"  href="분대원/강찬희.html" target="_blank">강찬희</a><br>
+        
+        <select id="selectX" onchange="getSelectValue('selectX')">
+          <option>일병</option>
+          <option>상병</option>
+          <option>병장</option>
+        </select>
+        <a style="color: paleturquoise;"  href="분대원/이승헌.html" target="_blank">이승헌</a>
+        </body>
+    </div>
+
+    <div><img src="image/山.jpg" width="100%">
+      <input style="width: 140px; height: 48px;" type="button" value="야간모드" onclick="
+      if (this.value ==='야간모드') {
+        document.querySelector('body').style.backgroundColor = 'black';
+        this.value = '밤색배경';
+      } else {
+        document.querySelector('body').style.backgroundColor = 'wheat';
+        this.value = '야간모드';
+      }">
+    </div>
+
+    <div id="todolist">
+      <div class="main__title">
+        <h1 style="color: brown;">메모장</h1>
+      </div>
+
+      <div class="input__section">
+        <form>
+          <div>
+            <input type="text" class="item" autofocus="true">
+          </div>
+          <div>
+            <button type="button" class="input__button"><i class="fas fa-plus-circle"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="item__list"></div>
+
+    </div>
+    <script src="todo.js" defer></script>
+
+    <div><img src="image/山.jpg" width="80%">
+      <span style="color: greenyellow;">
+        <script>
+          document.write("Made ");
+  
+          document.write("by ");
+  
+          document.write("신종성<br>");
+        </script></span></div>
+<!--  
+    <div style="color: greenyellow;">
+      <script>
+        document.write("Made<br>");
+
+        document.write("by<br>");
+
+        document.write("신종성<br>");
+      </script>
+    </div>
+-->
+  </div>
+
+</body>
+
+</html>
