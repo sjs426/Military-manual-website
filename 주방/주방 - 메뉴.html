@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../style2.CSS">
+  <link rel="stylesheet" href="../menubar.css">
+
+  <style>
+    .container {
+      display: grid;
+      grid-column: 1/7;
+      grid-row: 1/2;
+      grid-template-columns: repeat(6, minmax(0px, auto));
+      grid-template-rows: repeat(2, minmax(0px, auto));
+      gap: 1px;
+      place-items: center center;
+      align-content: space-between;
+      justify-content: space-evenly;
+    }
+
+    .item {
+      display: inline;
+      border: 5px red double;
+      padding: 10px;
+      margin: 20px;
+      width: 180px;
+      height: 150px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .top {
+      text-decoration: underline;
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .jb-box {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: 0px auto;
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .jb-text {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+
+    .jb-text p {
+      margin-top: -50px;
+      text-align: start;
+      font-size: 48px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top"><a style="color: green;" href="../index.html">방산대백과</a></div>
+
+  <div id="menubox">
+    <ul>
+      <li><a class="active" href="../index.html">뒤로가기</a></li>
+      <li><a href="주방 - 고정업무.html">고정업무</a></li>
+      <li><a href="주방 - 재료손질.html">재료손질</a></li>
+      <li><a href="주방 - 정비일.html">정비일</a></li>
+      <li><a href="../프론트/프론트 - 고정업무.html">프론트</a></li>
+      <li><a href="../홀/홀 - 고정업무.html">홀</a></li> 
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <div class="item">
+      <h1><a href="메뉴/주방 - 반찬.html">반찬</a></h1>
+    </div>
+    <div class="item">
+      <h1><a href="메뉴/주방 - 고기&생선.html">고기</a></h1>
+    </div>
+    <div class="item">
+      <h1><a href="메뉴/주방 - 국.html">국</a></h1>
+    </div>
+    <div class="item">
+      <h1><a href="메뉴/주방 - 면&밀가루.html">밀가루</a></h1>
+    </div>
+    <div class="item">
+      <h1><a href="메뉴/주방 - 간식.html">간식</a></h1>
+    </div>
+    <div class="item">
+      <h1><a href="메뉴/주방 - 덮밥&볶음.html">덮밥&볶음</a></h1>
+    </div>
+
+    <div class="item">
+      Click <a href="javascript:history.go(0);">반찬 랜덤 선택</a><br>
+      <script language="JavaScript">
+        function random_text() { };
+        var random_text = new random_text();
+        // Set the number of text strings to zero to start
+        var number = 0;
+        // Incremental list of all possible Text
+        random_text[number++] = "가지무침"
+        random_text[number++] = "부추무침"
+        random_text[number++] = "느타리버섯볶음"
+        random_text[number++] = "팽이버섯볶음"
+        random_text[number++] = "콩나물무침"
+        random_text[number++] = "표고버섯나물"
+        random_text[number++] = "시금치무침"
+        random_text[number++] = "애호박볶음"
+        random_text[number++] = "미역줄기볶음"
+        random_text[number++] = "맛살볶음"
+        random_text[number++] = "감자채볶음"
+        random_text[number++] = "오이무침"
+        random_text[number++] = "자가멸치"
+        random_text[number++] = "명엽채"
+        random_text[number++] = "황태채"
+        random_text[number++] = "진미채"
+        random_text[number++] = "부추전"
+        random_text[number++] = "연근조림"
+        random_text[number++] = "두부전"
+        random_text[number++] = "마파두부"
+        random_text[number++] = "두부조림"
+        random_text[number++] = "메추리알&꽈리고추"
+        random_text[number++] = "미트볼"
+        random_text[number++] = "비엔나 소세지볶음"
+        random_text[number++] = "고추장아찌"
+        random_text[number++] = "단무지장아찌"
+        random_text[number++] = "마늘장아찌"
+        random_text[number++] = "무말랭이"
+        random_text[number++] = "무생채"
+        random_text[number++] = "깻잎장아찌"
+        random_text[number++] = "계란전"
+        random_text[number++] = "참나물 겉절이"
+        // Create a random number with limits based on the number
+        // of possible random text strings
+        var random_number = Math.floor(Math.random() * number);
+        // Write out the random text to the browser
+        document.write(random_text[random_number]);
+      </script>
+    </div>
+
+    <div class="item">
+      Click <a href="javascript:history.go(0);">메뉴 랜덤 선택</a>
+      <form name="search" id="search">
+        <input type="text" id="sc" name="sc" value="" style="width:100px; height: 100px;">
+      </form>
+      <script>
+        A = new Array();
+        A[0] = "대패삼겹살 + 콩나물"
+        A[1] = "돼지갈비 (구이 or 찜)"
+        A[2] = "삼겹살 + 부추볶음, 김치볶음"
+        A[3] = "오겹살"
+        A[4] = "전지, 후지"
+        A[5] = "양지"
+        A[6] = "등뼈 + 묵은지"
+        A[7] = "등갈비 + 치즈"
+        A[8] = "갈비살"
+        A[9] = "차돌박이"
+        A[10] = "소불고기"
+        A[11] = "닭볶음탕(고추장 or 간장)"
+        A[12] = "닭계장"
+        A[13] = "치킨스테이크"
+        A[14] = "닭가슴살"
+        A[15] = "닭간장조림"
+        A[16] = "닭죽"
+        A[17] = "오리 + 부추볶음"
+        A[18] = "꽁치 (조림or구이)"
+        A[19] = "갈치 (조림or구이)"
+        A[20] = "고등어 (조림or구이)"
+        A[21] = "소고기청경채"
+        A[21] = "등심스테이크"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search.sc.value = randText;
+      </script>
+    </div>
+
+    <div class="item"> Click <a href="javascript:history.go(0);">메뉴 랜덤 선택</a>
+      <form id="search1">
+        <input type="text" id="sc1" value="" style="width:100px; height: 100px;">
+      </form>
+      <script>
+        A = new Array();
+        A[0] = "김치찌개	"
+        A[1] = "(차돌, 소면)된장찌개"
+        A[2] = "순두부찌개"
+        A[3] = "고추장찌개"
+        A[4] = "부대찌개"
+        A[5] = "짜글이"
+        A[6] = "소고구무국	"
+        A[7] = "콩나물국"
+        A[8] = "미역국"
+        A[9] = "샤브샤브"
+        A[10] = "청국장"
+        A[11] = "차돌두부전골"
+        A[12] = "뼈해장국"
+        A[13] = "갈비탕"
+        A[14] = "내장탕"
+        A[15] = "참치 or 햄베이컨샌드위치"
+        A[16] = "순대국"
+        A[17] = "육개장"
+        A[18] = "설렁탕"
+        A[19] = "건유 감자탕"
+        A[20] = "만두국"
+        A[21] = "쌀국수"
+        A[22] = "칼국수"
+        A[23] = "마라탕"
+        A[24] = "묵사발"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search1.sc1.value = randText;
+      </script>
+    </div>
+
+    <div class="item">
+      Click <a href="javascript:history.go(0);">메뉴 랜덤 선택</a>
+      <form id="search2">
+        <input type="text" id="sc2" value="" style="width:100px; height: 100px;">
+      </form>
+      <script>
+        A = new Array();
+        A[0] = "라면 - 차돌짬뽕, 너구리, 진라면, 참꺠, 불닭, 짜계치"
+        A[1] = "파스타 - 불고기, 로제, 크림, 토마토	"
+        A[2] = "비빔면 - 삼겹, 만두"
+        A[3] = "쫄면 - 골뱅이무침"
+        A[4] = "냉면"
+        A[5] = "소면 (잔치국수, 된장소면, 골뱅이무침 등)"
+        A[6] = "메밀면 - 비빔국수"
+        A[7] = "당면 - 닭볶음탕, 국물떡볶이"
+        A[8] = "우동 - 크림, 튀김, 오뎅"
+        A[9] = "부리또"
+        A[10] = "리조또"
+        A[11] = "또띠아 - 치킨"
+        A[12] = "떡볶이 - 국물"
+        A[13] = "라볶이"
+        A[14] = "빵 - 연유, 슈크림, 단팥, 소보로, 마늘"
+        A[15] = "참치 or 햄베이컨샌드위치"
+        A[16] = "햄버거 - 떡갈비 or 다짐육패티	"
+        A[17] = "팬케이크"
+        A[18] = "훠궈"
+        A[19] = "퀘사디아"
+        A[20] = "케밥"
+        A[21] = "미고랭"
+        A[22] = "고로케"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search2.sc2.value = randText;
+      </script>
+    </div>
+
+    <div class="item">
+      Click <a href="javascript:history.go(0);">메뉴 랜덤 선택</a>
+      <form id="search3">
+        <input type="text" id="sc3" value="" style="width:100px; height: 100px;">
+      </form>
+      <script>
+        A = new Array();
+        A[0] = "냉동피자"
+        A[1] = "물만두	"
+        A[2] = "요거트"
+        A[3] = "시리얼"
+        A[4] = "요구르트"
+        A[5] = "가라아게"
+        A[6] = "해쉬브라운	"
+        A[7] = "김말이"
+        A[8] = "감자튀김 대용량"
+        A[9] = "고구마튀김"
+        A[10] = "새우튀김"
+        A[11] = "만두"
+        A[12] = "핫도그"
+        A[13] = "돈까스"
+        A[14] = "바나나"
+        A[15] = "딸기"
+        A[16] = "수박	"
+        A[17] = "멜론"
+        A[18] = "방울토마토	"
+        A[19] = "사과"
+        A[20] = "오렌지"
+        A[21] = "참외"
+        A[22] = "아보카도"
+        A[23] = "KFC콘샐러드"
+        A[24] = "고구마치즈스틱"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search3.sc3.value = randText;
+      </script>
+    </div>
+
+    <div class="item">
+      Click <a href="javascript:history.go(0);">메뉴 랜덤 선택</a>
+      <form id="search4">
+        <input type="text" id="sc4" value="" style="width:100px; height: 100px;">
+      </form>
+      <script>
+        A = new Array();
+        A[0] = "오야코동"
+        A[1] = "부타동"
+        A[2] = "가라아게동"
+        A[3] = "간장계란밥"
+        A[4] = "스팸마요덮밥"
+        A[5] = "제육덮밥"
+        A[6] = "오징어덮밥"
+        A[7] = "비빔밥"
+        A[8] = "짜장밥"
+        A[9] = "연어덮밥"
+        A[10] = "김밥"
+        A[11] = "유부초밥"
+        A[12] = "마늘볶음밥"
+        A[13] = "치즈밥 - 국떡 국물에"
+        A[14] = "게살텐신항"
+        A[15] = "새우필라프(볶음밥)"
+        A[16] = "김치볶음밥"
+        A[17] = "마파두부덮밥"
+        A[18] = "토마토달걀볶음"
+        A[19] = "강된장"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search4.sc4.value = randText;
+      </script>
+    </div>
+  </div>
+
+  <div class="jb-box">
+    <video muted autoplay loop>
+      <source src="../viedo/Chef.mp4" type="video/mp4">
+    </video>
+    <div class="jb-text">
+      <p>이렇게 한달</p>
+      <p>보내고</p>
+      <P>새로운 한달</P>
+      <p>보내자</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <form name="search" id="search">
+        <input type="text" id="sc" name="sc" value="">
+    </form>
+    <script>
+        A = new Array();
+        A[0] = "Gift Ideas"
+        A[1] = "Toys"
+        A[2] = "Travel"
+        A[3] = "Digital Cameras"
+        A[4] = "Email"
+        A[5] = "Flowers"
+        A[6] = "DVDs"
+        A[7] = "Travel"
+        rand = Math.floor(A.length * Math.random());
+        randText = A[rand];
+        search.sc.value = randText;
+    </script>
+    <script language="JavaScript">
+        
+        function random_text()
+        {};
+        var random_text = new random_text();
+        // Set the number of text strings to zero to start
+        var number = 0;
+        // Incremental list of all possible Text
+        random_text[number++] = "짜계치1"
+        random_text[number++] = "라면 Text2"
+        random_text[number++] = "RㅇText3"
+        random_text[number++] = "ㅋㅋㅋ Text4"
+        random_text[number++] = "ㅎㅎText5"
+        // Create a random number with limits based on the number
+        // of possible random text strings
+        var random_number = Math.floor(Math.random() * number);
+        // Write out the random text to the browser
+        document.write(random_text[random_number]);
+    </script>
+        
+        <br><br>
+        Click <a href="javascript:history.go(0);">refresh</a> to see more random text.
+        </body>
+
+</html>
